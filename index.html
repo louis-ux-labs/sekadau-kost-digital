@@ -1,24 +1,75 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sekadau Kost Digital - Pak Leo</title>
-  <style>
-    body { font-family: Arial; margin: 0; padding: 20px; background: #f0f2f5; text-align: center; }
-    .card { background: white; padding: 20px; border-radius: 12px; max-width: 400px; margin: 50px auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    h1 { color: #1877f2; }
-    .btn { background: #25D366; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; display: inline-block; margin-top: 15px; font-weight: bold; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kost Pak Leo - Sekadau Kost Digital</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background: #0F172A; color: #fff; line-height: 1.6; }
+        .container { max-width: 500px; margin: 0 auto; padding: 20px; }
+        .card { background: #1E293B; border-radius: 20px; padding: 30px 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 1px solid #334155; }
+        .header { text-align: center; margin-bottom: 25px; }
+        .header h1 { font-size: 28px; color: #FBBF24; margin: 10px 0 5px; }
+        .header h2 { font-size: 18px; color: #CBD5E1; font-weight: 400; }
+        .badge { background: #FBBF24; color: #0F172A; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: bold; display: inline-block; margin-bottom: 15px; }
+        .price { background: linear-gradient(135deg, #FBBF24, #F59E0B); color: #0F172A; text-align: center; padding: 15px; border-radius: 15px; margin: 20px 0; }
+        .price h3 { font-size: 32px; margin: 0; }
+        .price p { font-size: 14px; margin: 0; opacity: 0.9; }
+        .features { margin: 25px 0; }
+        .feature { display: flex; align-items: center; margin-bottom: 12px; background: #334155; padding: 12px; border-radius: 10px; }
+        .feature span { font-size: 20px; margin-right: 12px; }
+        .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 25px 0; }
+        .gallery img { width: 100%; height: 120px; object-fit: cover; border-radius: 10px; border: 2px solid #334155; }
+        .gallery img:first-child { grid-column: 1 / -1; height: 180px; }
+        .btn-wa { display: block; background: #25D366; color: white; text-align: center; padding: 16px; border-radius: 15px; text-decoration: none; font-weight: bold; font-size: 18px; margin: 20px 0; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+        .maps { width: 100%; height: 200px; border: 0; border-radius: 15px; margin: 20px 0; }
+        .footer { text-align: center; font-size: 12px; color: #64748B; margin-top: 30px; }
+        .footer a { color: #FBBF24; text-decoration: none; }
+    </style>
 </head>
 <body>
-  <div class="card">
-    <h1>🏠 Sekadau Kost Digital</h1>
-    <h3>Kost Pak Leo</h3>
-    <p>✅ Kamar AC + WiFi Kenceng<br>✅ Dapur Bersama Bersih<br>✅ Lokasi Strategis Sekadau</p>
-    <h2>💰 Rp 750.000 / Bulan</h2>
-    <a class="btn" href="https://wa.me/6282251683606?text=Halo%20Pak%20Leo,%20saya%20mau%20tanya%20kost">Chat WA Pak Leo</a>
-    <p style="font-size:12px;margin-top:20px;color:#666;">Dibuat pake HP oleh Jon & Min 🫡</p>
-  </div>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="badge">⭐ TERPOPULER DI SEKADAU</div>
+                <h1>🏠 Sekadau Kost Digital</h1>
+                <h2>Kost Pak Leo - Nyaman Kayak Rumah Sendiri</h2>
+            </div>
+
+            <div class="price">
+                <p>Mulai dari</p>
+                <h3>Rp 750.000</h3>
+                <p>/ Bulan - All In</p>
+            </div>
+
+            <div class="features">
+                <div class="feature"><span>❄️</span> Kamar Full AC + Kasur Empuk</div>
+                <div class="feature"><span>📶</span> WiFi Kenceng 50Mbps Unlimited</div>
+                <div class="feature"><span>🍳</span> Dapur Bersama Bersih + Kulkas</div>
+                <div class="feature"><span>🛵</span> Parkiran Luas + CCTV 24 Jam</div>
+                <div class="feature"><span>📍</span> 5 Menit ke Pusat Kota Sekadau</div>
+            </div>
+
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&q=80" alt="Kamar Kost Mewah" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&q=80" alt="Kamar Mandi Bersih" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&q=80" alt="Dapur Modern" loading="lazy">
+            </div>
+
+            <a href="https://wa.me/6282251683606?text=Halo%20Pak%20Leo,%20saya%20mau%20tanya%20kost%20yang%20di%20web" class="btn-wa">
+                💬 Chat WA Pak Leo Sekarang
+            </a>
+
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.817!2d110.9!3d0.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sid!2sid!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+
+            <div class="footer">
+                📍 Jl. Merdeka No. 123, Sekadau, Kalbar<br>
+                Dibuat pake HP oleh <a href="https://github.com/louis-ux-labs">Jon & Jin</a> 😎<br>
+                © 2026 Kost Pak Leo. All Rights Reserved
+            </div>
+        </div>
+    </div>
 </body>
 </html>
