@@ -23,8 +23,47 @@
         .price h3 { font-size: 32px; margin: 0; }
         .price p { font-size: 14px; margin: 0; opacity: 0.9; }
         .features { margin: 25px 0; }
-        .feature { display: flex; align-items: center; margin-bottom: 12px; background: #334155; padding: 12px; border-radius: 10px; }
-        .feature span { font-size: 20px; margin-right: 12px; }
+        .feature {
+    padding: 20px;
+    border-radius: 16px;
+    margin: 15px 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #FBBF24;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.feature::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.feature .icon, .feature .text {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0,0,0,1), 0px 0px 10px rgba(0,0,0,0.8);
+}
+.feature .icon {
+    font-size: 28px;
+    background: rgba(251, 191, 36, 0.2);
+    padding: 8px;
+    border-radius: 50%;
+    border: 2px solid #FBBF24;
+}
+.ac { background-image: url('https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=600&q=80'); }
+.wifi { background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80'); }
+.dapur { background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80'); }
+.parkir { background-image: url('https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=600&q=80'); }
+.km { background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80'); }
         .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 25px 0; }
         .gallery img { width: 100%; height: 120px; object-fit: cover; border-radius: 10px; border: 2px solid #334155; }
         .gallery img:first-child { grid-column: 1 / -1; height: 180px; }
@@ -51,11 +90,26 @@
             </div>
 
             <div class="features">
-                <div class="feature"><span>❄️</span> Kamar Full AC + Kasur Empuk</div>
-                <div class="feature"><span>📶</span> WiFi Kenceng 50Mbps Unlimited</div>
-                <div class="feature"><span>🍳</span> Dapur Bersama Bersih + Kulkas</div>
-                <div class="feature"><span>🛵</span> Parkiran Luas + CCTV 24 Jam</div>
-                <div class="feature"><span>📍</span> 5 Menit ke Pusat Kota Sekadau</div>
+    <div class="feature ac">
+        <span class="icon">❄️</span>
+        <span class="text">Kamar Full AC + Kasur Empuk</span>
+    </div>
+    <div class="feature wifi">
+        <span class="icon">📶</span>
+        <span class="text">WiFi Kenceng 50Mbps Unlimited</span>
+    </div>
+    <div class="feature dapur">
+        <span class="icon">🍳</span>
+        <span class="text">Dapur Bersama Bersih + Kulkas</span>
+    </div>
+    <div class="feature parkir">
+        <span class="icon">🏍️</span>
+        <span class="text">Parkiran Motor Luas</span>
+    </div>
+    <div class="feature km">
+        <span class="icon">🚿</span>
+        <span class="text">Kamar Mandi Dalam</span>
+    </div>
             </div>
 
             <div class="gallery">
